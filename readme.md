@@ -43,6 +43,8 @@
    - Klik **Hitung Total** untuk menghitung total harga semua barang.
 
 5. **Konversi ke USD**:
+- Klik **Konversi ke USD** untuk mengonversi total belanja ke mata uang USD (menggunakan kurs dummy).
+
 
 ## Code Review
 Berikan kami ulasan terkait source code ini dalam bentuk komentar, yang dalam tools peninjauan kode, menjelaskan masalah apa yang anda temukan. Penulis kode serta reviewer akan terlibat dalam diskusi tentang perubahan kode.
@@ -50,6 +52,20 @@ Berikan kami ulasan terkait source code ini dalam bentuk komentar, yang dalam to
 **Penulis kode akan membuat/memperbarui kode berdasarkan umpan balik yang diterima**.
 
 Setelah perubahan terjadi dan semua permasalahan diselesaikan, perubahan kode yang disetujui akan diintegrasikan ke dalam basis kode utama, biasanya menggunakan sistem kontrol versi.
+
+## **Struktur Kode:**
+-  Kode disusun dengan baik menggunakan kelas terpisah ( Item) untuk merepresentasikan barang.
+- Logika aplikasi dipisahkan menjadi fungsi kecil untuk mempermudah pemeliharaan.
+  **Antarmuka Pengguna (GUI):**
+- Menggunakan komponen GUI yang relevan seperti JTable, JFileChooser, dan JOptionPane.
+- Tampilannya intuitif dengan tata letak BorderLayoutdan GridLayout.
+  **Penanganan Pengecualian:**
+- menyertakan kesalahan seperti input kosong, format angka tidak valid, atau gambar yang tidak dipilih dengan baik menggunakan try-catch.
+  **Fitur CRUD:**
+- Implementasi lengkap fitur CRUD untuk data barang, termasuk update tabel secara langsung.
+  **Penanganan Gambar:**
+- Mendukung gambar untuk setiap barang menggunakan JFileChooserdan ImageIcon.
+
 
 ## License
 (2024) Program ini dibuat dalam penyelesaian tugas mata kuliah Program Lanjut, dan dipublikasikan untuk bebas studi.
